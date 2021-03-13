@@ -1,0 +1,230 @@
+@font-face {
+  font-family: "Gotham Pro Regular";
+  src: url("../fonts/GothamPro.eot");
+  src: url("../fonts/GothamPro.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro.woff") format("woff"), url("../fonts/GothamPro.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@-webkit-keyframes legendAp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes legendAp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes colorFull {
+  0% {
+    width: 0%;
+  }
+}
+@keyframes colorFull {
+  0% {
+    width: 0%;
+  }
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.testBlock {
+  display: flex;
+  width: 309px;
+  height: 469px;
+  margin: 0 auto;
+}
+.testBlock .asideLine {
+  width: 46px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 150px;
+  -webkit-animation: legendAp 0.5s ease-in-out;
+          animation: legendAp 0.5s ease-in-out;
+}
+.testBlock .asideLine .asUp {
+  margin-left: 5px;
+  margin-bottom: 5px;
+  width: 26px;
+}
+.testBlock .asideLine .plus {
+  width: 12px;
+}
+.testBlock .asideLine .asDown {
+  width: 10px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.testBlock .diagrammWrap {
+  width: 230px;
+  margin-top: 12px;
+}
+.testBlock .diagrammWrap .diagramm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 269px;
+}
+.testBlock .diagrammWrap .diagramm .flag {
+  margin-bottom: 25px;
+}
+.testBlock .diagrammWrap .diagramm .percentWrap {
+  display: flex;
+  margin-bottom: 5px;
+}
+.testBlock .diagrammWrap .diagramm .percentWrap .ceilNum {
+  font-family: "Gotham Pro Regular";
+  font-size: 47px;
+  color: #555;
+}
+.testBlock .diagrammWrap .diagramm .percentWrap .perc .icPer {
+  font-family: "Gotham Pro Regular";
+  font-size: 18px;
+  color: #999BA3;
+  text-align: right;
+}
+.testBlock .diagrammWrap .diagramm .percentWrap .perc .perNum {
+  font-family: "Gotham Pro Regular";
+  font-size: 25px;
+  color: #555;
+}
+.testBlock .diagrammWrap .diagramm .titleDiag {
+  font-weight: 700;
+  font-size: 21px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.testBlock .diagrammWrap .diagramm .subDiag {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #FBD229;
+}
+.testBlock .diagrammWrap .diagramm .diagText {
+  text-align: center;
+  font-weight: 400;
+  font-size: 11px;
+  color: #B7B2B2;
+  margin-bottom: 10px;
+}
+.testBlock .diagrammWrap .diagramm .triagWrap {
+  display: flex;
+}
+.testBlock .diagrammWrap .diagramm .triagWrap .triagNum {
+  text-align: center;
+  font-weight: 400;
+  font-size: 17px;
+  color: #70A74B;
+  margin-left: 5px;
+}
+.testBlock .diagrammWrap .diagramm .diag {
+  position: absolute;
+  top: 40px;
+  z-index: 13;
+}
+.testBlock .diagrammWrap .legend {
+  margin-top: 40px;
+  -webkit-animation: legendAp 1s ease-in-out;
+          animation: legendAp 1s ease-in-out;
+}
+.testBlock .diagrammWrap .legend .legendItem {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+.testBlock .diagrammWrap .legend .legendItem .nameLeg {
+  font-weight: 400;
+  font-size: 14px;
+  color: #555;
+  width: 100px;
+}
+.testBlock .diagrammWrap .legend .legendItem .numPersonWrap {
+  margin-right: 15px;
+}
+.testBlock .diagrammWrap .legend .legendItem .numPersonWrap .perNum {
+  padding-top: 2px;
+  font-weight: 400;
+  font-size: 12px;
+  color: #555;
+  text-align: right;
+}
+.testBlock .diagrammWrap .legend .legendItem .numPersonWrap .personQuan {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+}
+.testBlock .diagrammWrap .legend .legendItem .numPersonWrap .personQuan .numPers {
+  font-weight: 400;
+  font-size: 12px;
+  color: #999;
+}
+.testBlock .diagrammWrap .legend .legendItem .numPersonWrap .personQuan img {
+  height: 13px;
+  margin-left: 5px;
+}
+.testBlock .diagrammWrap .legend .legendItem .legendBlock {
+  display: flex;
+  width: 90px;
+  height: 35px;
+  background-color: #F9F9F9;
+  border: 2px solid #ECECEC;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+}
+.testBlock .diagrammWrap .legend .legendItem .legendBlock .colorWrap {
+  width: 35px;
+  height: 35px;
+  margin-left: -5px;
+}
+.testBlock .diagrammWrap .legend .legendItem .legendBlock .colorWrap .colorUp {
+  height: 70%;
+  -webkit-animation: colorFull 1s ease-in-out;
+          animation: colorFull 1s ease-in-out;
+}
+.testBlock .diagrammWrap .legend .legendItem .legendBlock .colorWrap .colorUp.green {
+  background-color: #70A74B;
+  width: 31px;
+}
+.testBlock .diagrammWrap .legend .legendItem .legendBlock .colorWrap .colorUp.yellow {
+  background-color: #FBD229;
+  width: 32px;
+}
+.testBlock .diagrammWrap .legend .legendItem .legendBlock .colorWrap .colorUp.red {
+  background-color: #ED5243;
+  width: 26px;
+}
+.testBlock .diagrammWrap .legend .legendItem .legendBlock .colorWrap .colorDown {
+  height: 30%;
+  opacity: 0.5;
+  -webkit-animation: colorFull 1s ease-in-out;
+          animation: colorFull 1s ease-in-out;
+}
+.testBlock .diagrammWrap .legend .legendItem .legendBlock .colorWrap .colorDown.green {
+  background-color: #70A74B;
+  width: 30px;
+}
+.testBlock .diagrammWrap .legend .legendItem .legendBlock .colorWrap .colorDown.yellow {
+  background-color: #FBD229;
+  width: 28px;
+}
+.testBlock .diagrammWrap .legend .legendItem .legendBlock .colorWrap .colorDown.red {
+  background-color: #ED5243;
+  width: 31px;
+}
+.testBlock .diagrammWrap .legend .legendItem .legendBlock .colorNum {
+  font-weight: 400;
+  font-size: 12px;
+  color: #5D5D5D;
+}/*# sourceMappingURL=style.css.map */

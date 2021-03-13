@@ -1,0 +1,289 @@
+@font-face {
+    font-family: 'Gotham Pro Regular';
+    src: url('../fonts/GothamPro.eot');
+    src: url('../fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GothamPro.woff') format('woff'),
+    url('../fonts/GothamPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@keyframes legendAp {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        
+    }
+}
+
+@keyframes colorFull {
+    0% {
+        width: 0%;
+    }
+    100%  {
+        
+    }
+}
+
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.testBlock {
+    display: flex;
+    width: 309px;
+    height: 469px;
+    margin: 0 auto;
+
+    .asideLine {
+        width: 46px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 150px;
+        animation: legendAp 0.5s ease-in-out;
+
+
+        .asUp {
+            margin-left: 5px;
+            margin-bottom: 5px;
+            width: 26px;
+        }
+
+        .plus {
+            width: 12px;
+        }
+        .asDown {
+            width: 10px;
+            margin-left: 5px;
+            margin-top: 5px;
+        }
+    }
+
+    .diagrammWrap {
+        width: 230px;
+        margin-top: 12px;
+
+        .diagramm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            height: 269px;
+
+            .flag {
+                margin-bottom: 25px;
+            }
+
+            .percentWrap {
+                display: flex;
+                margin-bottom: 5px;
+
+                .ceilNum {
+                    font-family: 'Gotham Pro Regular';
+                    font-size: 47px;
+                    color: #555;
+
+                }
+
+                .perc {
+
+
+                    .icPer {
+                        font-family: 'Gotham Pro Regular';
+                        font-size: 18px;
+                        color: #999BA3;
+                        text-align: right;
+                        
+                    }
+
+
+                    .perNum {
+                        font-family: 'Gotham Pro Regular';
+                        font-size: 25px;
+                        color: #555;
+                    }
+                }
+            }
+
+            .titleDiag {
+                
+                font-weight: 700;
+                font-size: 21px;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            .subDiag {
+                font-weight: 700;
+                font-size: 16px;
+                text-align: center;
+                color: #FBD229;
+                
+            }
+
+
+            .diagText {
+                text-align: center;
+                font-weight: 400;
+                font-size: 11px;
+                color: #B7B2B2;
+                margin-bottom: 10px;
+                
+            }
+
+
+            .triagWrap {
+                display: flex;
+                .triagNum {
+                    text-align: center;
+                    font-weight: 400;
+                    font-size: 17px;
+                    color: #70A74B;
+                    margin-left: 5px;
+                }
+            }
+
+            
+            .diag {
+                position: absolute;
+                
+                top: 40px;
+                z-index: 13;
+            }
+        }
+
+        .legend {
+
+            margin-top: 40px;
+            animation: legendAp 1s ease-in-out;
+
+            .legendItem {
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 15px;
+                .nameLeg {
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: #555;
+                    width: 100px;
+                }
+
+                .numPersonWrap {
+                    margin-right: 15px;
+                    .perNum {
+                        padding-top: 2px;
+                        font-weight: 400;
+                        font-size: 12px;
+                        color: #555;
+                        text-align: right;
+                    }
+
+                    .personQuan {
+                        margin-top: 5px;
+                        display: flex;
+                        justify-content:flex-end;
+
+                        .numPers {
+                            font-weight: 400;
+                            font-size: 12px;
+                            color: #999;
+                        }
+
+                        img {
+                            height: 13px;
+                            margin-left: 5px;
+                        }
+                    }
+                }
+
+                .legendBlock {
+                    display: flex;
+                    width: 90px;
+                    height: 35px;
+                    background-color: #F9F9F9;
+                    border: 2px solid #ECECEC;
+                    border-radius: 5px;
+                    align-items: center;
+                    justify-content: space-around;
+                    overflow: hidden;
+                    .colorWrap {
+                        width: 35px;
+                        height: 35px;
+                        margin-left: -5px;
+
+                        .colorUp {
+                            
+                            height: 70%;
+                            animation: colorFull 1s ease-in-out;
+                            &.green {
+                                background-color: #70A74B;
+                                width: 31px;
+                                
+                            }
+
+                            &.yellow {
+                                background-color: #FBD229;
+                                width: 32px;
+                                
+                            }
+
+    
+                            &.red {
+                                background-color: #ED5243;
+                                width: 26px;
+                                
+                            }
+                        }
+                        .colorDown {
+                            height: 30%;
+                            opacity: 0.5;
+                            animation: colorFull 1s ease-in-out;
+                            &.green {
+                                background-color: #70A74B;
+                                width: 30px;
+                                
+                            }
+                            &.yellow {
+                                background-color: #FBD229;
+                                width: 28px;
+                                
+                            }
+    
+                            &.red {
+                                background-color: #ED5243;
+                                width: 31px;
+                                
+                            }
+                            
+                            
+                        }
+
+                        
+
+
+
+                    }
+
+                    .colorNum {
+                        font-weight: 400;
+                        font-size: 12px;
+                        color: #5D5D5D;
+                    }
+                }
+
+
+
+
+            }
+        }
+
+    }
+}
